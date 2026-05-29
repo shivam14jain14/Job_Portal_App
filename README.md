@@ -393,17 +393,6 @@ Calling `GET /load` seeds the database with these five job postings:
 
 ---
 
-## Future Improvements
-
-- [ ] **JWT Authentication** — Infrastructure exists (`/login` endpoint is stubbed); replace HTTP Basic with a JWT token flow for true statelessness.
-- [ ] **Open `/register` Endpoint** — Remove the authentication requirement from `/register` so new users can self-onboard.
-- [ ] **Input Validation** — Add `@Valid` + Bean Validation (`@NotBlank`, `@Min`) on request bodies.
-- [ ] **Pagination** — Add `Pageable` support to `GET /jobPosts` for large result sets.
-- [ ] **Role-Based Access Control** — Introduce `ADMIN` and `USER` roles; restrict destructive operations to admins.
-- [ ] **Externalize Secrets** — Move database credentials to environment variables or a secrets manager.
-- [ ] **Docker Compose** — Add a `docker-compose.yml` to spin up the API and PostgreSQL together with a single command.
-- [ ] **Swagger / OpenAPI** — Add `springdoc-openapi` for interactive API documentation at `/swagger-ui.html`.
-- [ ] **Unit & Integration Tests** — Expand test coverage for service and controller layers.
 
 ---
 
